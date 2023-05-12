@@ -1,0 +1,693 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  height: 100vh;
+
+  /* Does NOT work on Safari */
+  /* scroll-behavior: smooth; */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(228, 76, 160);
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(187, 52, 126);
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Syne", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+
+h2 {
+  font-family: "Syne", sans-serif;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+
+  width: 100%;
+  height: auto;
+}
+
+section {
+  display: block;
+}
+
+main {
+  display: block;
+}
+
+
+
+
+/* HEADER */
+
+.logo {
+  height: 20rem;
+}
+
+.header {
+  font-size: 2.2rem;
+  height: 9.6rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list {
+  list-style: none;
+  gap: 5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/**** INDEX ****/
+
+.section-nosotros {
+  background-color: #ffffff;
+  padding-top: 2rem;
+}
+
+.box-nosotros {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.sobre-nosotros {
+  font-size: 4.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.nosotros-descripcion {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  /*
+  font-family: 'Rubik', sans-serif;*/
+}
+
+.img-nosotros {
+  width: 100%;
+}
+
+/**** MARCAS ****/
+
+.nuestras-marcas {
+  padding: 4.6rem 0;
+  font-size: 3.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.section-marcas {
+  padding: 2.6rem 0;
+  font-size: 1.5rem;
+  line-height: 1.05;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10.4rem;
+  row-gap: 5.6rem;
+}
+
+.picture-marcas {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-dermopurity {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.6rem;
+  align-items: center;
+  box-shadow: 0 2rem 4rem 0 rgba(0, 0, 0, 0.07);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.dermopurity-descripcion {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.dermopurity-img-box {
+  width: 100%;
+}
+
+.box-makeup {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.6rem;
+  align-items: center;
+  box-shadow: 0 2rem 4rem 0 rgba(0, 0, 0, 0.07);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.makeup-descripcion {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.makeup-img-box {
+  width: 100%;
+}
+
+.box-kiki {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.6rem;
+  align-items: center;
+  box-shadow: 0 2rem 4rem 0 rgba(0, 0, 0, 0.07);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.kiki-descripcion {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.kiki-img-box {
+  width: 100%;
+}
+
+.box-lidherma {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.6rem;
+  align-items: center;
+  box-shadow: 0 2rem 4rem 0 rgba(0, 0, 0, 0.07);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.lidherma-descripcion {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.lidherma-img-box {
+  width: 100%;
+}
+
+.box-alfaparf {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.6rem;
+  align-items: center;
+  box-shadow: 0 2rem 4rem 0 rgba(0, 0, 0, 0.07);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.alfaparf-descripcion {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.alfaparf-img-box {
+  width: 100%;
+}
+
+.box-ht {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.6rem;
+  align-items: center;
+  box-shadow: 0 2rem 4rem 0 rgba(0, 0, 0, 0.07);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.ht-descripcion {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.ht-img-box {
+  width: 100%;
+}
+
+/**** PRODUCTOS ***/
+
+.nuestros-productos {
+  padding: 4.6rem 0;
+  font-size: 3.2rem;
+  line-height: 1.05;
+}
+
+.section-productos {
+  padding: 1.6rem 0;
+  font-size: 2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.carousel-item {
+    max-width: 40%;
+}
+
+.carousel-inner {
+    margin-left: 30rem;
+}
+
+.carousel-control-prev-icon {
+    background-color: rgb(226, 74, 158);
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 2rem;
+}
+
+.carousel-control-next-icon {
+    background-color: rgb(226, 74, 158);
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 2rem;
+}
+
+/**** CONTACTO ****/
+
+.contacto {
+  padding: 4.6rem 0;
+  font-size: 3.2rem;
+  line-height: 1.05;
+  margin-bottom: 2.2rem;
+}
+
+.container-contacto{
+    display:flex;
+    padding-bottom: 3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    margin: 0 auto;
+  }
+  
+  label {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  input {
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #ccc;
+  }
+  
+  input[type="submit"] {
+    background-color: rgb(226, 74, 158);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: rgb(187, 52, 126);
+
+  }
+
+  .newsletter {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+
+.box-nw {
+    margin-right: 10rem;
+}
+
+
+
+
+/**** FOOTER ****/
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.footer {
+  padding: 8.8rem 0;
+  border-top: 2px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.menu-hamb {
+    display: none;
+}
+
+/**** RESPONSIVE ****/
+
+.navbar {
+    display:none;
+}
+
+@media (max-width: 34em) {
+
+    nav {
+       /* position: absolute;
+        top: 8rem;
+        left: 0rem;
+        background-color: white;
+        width: 100%;*/
+        display: none;
+        
+    }
+
+    .navbar-toggler {
+        background-color: white;
+        margin-top: 4rem;
+
+    }
+
+    .bg-light {
+        background-color: white;
+        --bs-bg-opacity: 0;
+    }
+
+    .navbar-nav {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+
+    }
+
+    .navbar{
+        display: block;
+    }
+
+    
+
+
+
+    /*index*/
+
+    .sobre-nosotros {
+        margin-top: 2rem;
+    }
+
+    .box-nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+    }
+
+    .nosotros-descripcion {
+        margin-bottom: 0rem;
+    }
+    
+    /*marcas*/
+
+    .nuestras-marcas {
+        margin-bottom: 0rem;
+    }
+
+    .section-marcas {
+        grid-template-columns: 1fr;
+    }
+
+    .box-dermopurity {
+        grid: none;
+        gap: 2rem;
+    }
+
+    .box-dermopurity {
+        grid: none;
+        gap: 2rem;
+    }
+
+    .box-makeup {
+        grid: none;
+        gap: 2rem;
+    }
+
+    .box-kiki {
+        grid: none;
+        gap: 2rem;
+    }
+
+    .box-lidherma {
+        grid: none;
+        gap: 2rem;
+    }
+
+    .box-alfaparf {
+        grid: none;
+        gap: 2rem;
+    }
+
+    .box-ht {
+        grid: none;
+        gap: 2rem;
+    }
+
+    /*productos*/
+
+    .nuestros-productos {
+        margin-bottom: 0rem;
+    }
+
+    .section-productos {
+        margin-bottom: 2rem;
+        padding: 2.6rem 0;
+    }
+
+    .productos-img-box {
+        margin-top: 4rem;
+    }
+
+    .carousel-inner {
+        width: 100%;
+       margin-left: 6.5rem;
+       
+    }
+
+    .carousel-item {
+        max-width: 60%;
+    }
+
+
+
+    /*contacto*/
+
+    .contacto {
+        padding-bottom: 1.5rem
+    }
+
+    .container-contacto {
+        display: grid;
+    }
+
+    .map {
+        width: 80%;
+        margin-right: 8rem;
+        margin-top: 2rem;
+    }
+
+    .newsletter {
+        margin-top: 2.5rem;
+    }
+
+    form {
+        width: 30rem;
+        margin-left: 1rem;
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+
+    /*footer*/
+
+    .logo-col {
+        display: none;
+    }
+
+    .grid--footer {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+     }
+
+    }
+/*************************/
+
+
+    @media (max-width: 82em) {
+        
+    .carousel-inner {
+        margin-left: 22rem;
+    }
+
+    form {
+        width: 25rem;
+    }
+
+    
+    .section-marcas {
+        column-gap: 2rem;
+    }
+
+    .logo-col {
+        width: 20rem;
+        display: block;
+    }
+
+    }
+/*************************/
+
+
+    @media (max-width: 52em) {
+
+        .carousel-inner {
+            margin-left: 9rem;
+        }
+
+        .logo-col {
+            width: 20rem;
+            display: block;
+        }
+    }
+
+/*************************/
+
+
+    @media (max-width: 102.4em) {
+
+        .carousel-inner {
+            margin-left: 26rem;
+        }
+
+    }
+
+/*************************/
+
+
+@media (max-width: 128em) {
+
+    .carousel-inner {
+        margin-left: 33rem;
+    }
+
+}
